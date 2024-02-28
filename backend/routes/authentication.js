@@ -32,13 +32,13 @@ router.get(
   "/google/redirect",
   passport.authenticate("google", {
     failureRedirect: "/login/failed",
-    successRedirect: "https://cloud-server-alpha.vercel.app/",
+    successRedirect: "https://cloud-smoky-six.vercel.app/",
   })
 );
 
 router.get("/logout", (req, res) => {
   req.logout();
-  res.redirect("https://cloud-server-alpha.vercel.app/")
+  res.redirect("https://cloud-smoky-six.vercel.app/")
 })
 
 router.post("/login", login);
