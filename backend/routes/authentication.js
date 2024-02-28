@@ -38,7 +38,7 @@ router.get(
 
 router.get("/logout", (req, res) => {
   req.logout();
-  res.redirect("https://cloud-smoky-six.vercel.app/")
+  res.redirect("https://cloud-server-alpha.vercel.app/")
 })
 
 router.post("/login", login);
