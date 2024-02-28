@@ -8,7 +8,7 @@ passport.use(
     {
       clientID: process.env["GOOGLE_CLIENT_ID"],
       clientSecret: process.env["GOOGLE_CLIENT_SECRET"],
-      callbackURL: "http://localhost:3001/auth/google/redirect",
+      callbackURL: "https://cloud-server-alpha.vercel.app/auth/google/redirect",
       scope: ["profile", "email"],
     },
     async (accessToken, refreshToken, profile, cb) => {

@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${userId}`, {
+      const response = await axios.get(`https://cloud-server-alpha.vercel.app/users/${userId}`, {
         withCredentials: true,
       });
     

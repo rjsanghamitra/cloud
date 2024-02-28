@@ -45,7 +45,7 @@ const MyPostWidget = ({ picture }) => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3001/posts",
+        "https://cloud-server-alpha.vercel.app/posts",
         formData,
         {
           withCredentials: true,

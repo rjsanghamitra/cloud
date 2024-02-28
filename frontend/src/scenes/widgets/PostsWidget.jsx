@@ -11,7 +11,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/posts', {
+      const response = await axios.get('https://cloud-server-alpha.vercel.app/posts', {
         withCredentials: true,
       });
     
@@ -24,7 +24,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const getUserPosts = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/posts/${userId}/posts`, {
+      const response = await axios.get(`https://cloud-server-alpha.vercel.app/posts/${userId}/posts`, {
         withCredentials: true,
       });
     

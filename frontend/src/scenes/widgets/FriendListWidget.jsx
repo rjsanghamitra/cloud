@@ -14,7 +14,7 @@ const FriendsListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${userId}/friends`, {
+      const response = await axios.get(`https://cloud-server-alpha.vercel.app/users/${userId}/friends`, {
         withCredentials: true,
       });
     

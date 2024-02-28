@@ -32,13 +32,13 @@ router.get(
   "/google/redirect",
   passport.authenticate("google", {
     failureRedirect: "/login/failed",
-    successRedirect: "http://localhost:3000/",
+    successRedirect: "https://cloud-server-alpha.vercel.app/",
   })
 );
 
 router.get("/logout", (req, res) => {
   req.logout();
-  res.redirect("http://localhost:3000/")
+  res.redirect("https://cloud-server-alpha.vercel.app/")
 })
 
 router.post("/login", login);

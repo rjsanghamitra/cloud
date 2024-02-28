@@ -76,7 +76,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://cloud-server-alpha.vercel.app/auth/register",
       {
         method: "POST",
         body: formData,
@@ -92,8 +92,8 @@ const Form = () => {
 
   const GoogleAuth = async () => {
     try {
-      window.open("http://localhost:3001/auth/google/redirect", "_self");
-      const resp = await axios.get("http://localhost:3001/auth/login/success", {
+      window.open("https://cloud-server-alpha.vercel.app/auth/google/redirect", "_self");
+      const resp = await axios.get("https://cloud-server-alpha.vercel.app/auth/login/success", {
         withCredentials: true,
       });
       const data = resp.data;
@@ -113,7 +113,7 @@ const Form = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
+    const loggedInResponse = await fetch("https://cloud-server-alpha.vercel.app/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),
