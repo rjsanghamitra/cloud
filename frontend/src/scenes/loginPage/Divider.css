@@ -1,0 +1,17 @@
+.divider-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background-color: #33DDFB;
+}
+
+.divider-text {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #33DDFB;
+}
